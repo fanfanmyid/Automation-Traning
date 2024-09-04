@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-09-04T17:50:15.751828" rpa="false" schemaversion="5">
+<suite id="s1" name="AutomationRobotFramework" source="/Users/fandly/Documents/AutomationRobotFramework">
+<suite id="s1-s1" name="TC01-Login" source="/Users/fandly/Documents/AutomationRobotFramework/TC01-Login.robot">
+<test id="s1-s1-t1" name="User Login Successfully" line="13">
+<kw name="Given The user open Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-04T17:50:15.871554" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-04T17:50:15.871358" elapsed="2.780869"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-04T17:50:18.654095" elapsed="0.399166"/>
+</kw>
+<status status="PASS" start="2024-09-04T17:50:15.871070" elapsed="3.182440"/>
+</kw>
+<kw name="When The user already see the Login Page">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-09-04T17:50:19.077461" level="INFO">Element 'id:login-button' is displayed.</msg>
+<arg>id:login-button</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-04T17:50:19.057183" elapsed="0.020813"/>
+</kw>
+<status status="PASS" start="2024-09-04T17:50:19.056741" elapsed="0.021415"/>
+</kw>
+<kw name="And The user input username">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-04T17:50:19.079769" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-04T17:50:19.079562" elapsed="0.332705"/>
+</kw>
+<status status="PASS" start="2024-09-04T17:50:19.079183" elapsed="0.333769"/>
+</kw>
+<kw name="And The User input password">
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-09-04T17:50:19.414355" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-09-04T17:50:19.436959" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-04T17:50:19.413965" elapsed="0.059035"/>
+</kw>
+<status status="PASS" start="2024-09-04T17:50:19.413488" elapsed="0.059684"/>
+</kw>
+<kw name="And The user click button login">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-04T17:50:19.474697" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-04T17:50:19.474469" elapsed="0.111450"/>
+</kw>
+<status status="PASS" start="2024-09-04T17:50:19.473771" elapsed="0.113003"/>
+</kw>
+<kw name="Then The user should see the cart button">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-09-04T17:50:19.605944" level="INFO">Element 'id:shopping_cart_container' is displayed.</msg>
+<arg>id:shopping_cart_container</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-04T17:50:19.588648" elapsed="0.017505"/>
+</kw>
+<status status="PASS" start="2024-09-04T17:50:19.587185" elapsed="0.019132"/>
+</kw>
+<status status="PASS" start="2024-09-04T17:50:15.870322" elapsed="3.736295"/>
+</test>
+<status status="PASS" start="2024-09-04T17:50:15.770732" elapsed="3.836880"/>
+</suite>
+<status status="PASS" start="2024-09-04T17:50:15.757948" elapsed="3.851352"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="AutomationRobotFramework">AutomationRobotFramework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TC01-Login">AutomationRobotFramework.TC01-Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
