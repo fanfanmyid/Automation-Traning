@@ -2,13 +2,11 @@
 Library    SeleniumLibrary
 Resource    resources/pages/loginPage.robot
 
-
-
 *** Test Cases ***
 User Login Successfully
-    Given The user open Login Page
-    When The user already see the Login Page
-    And The user input username
-    And The User input password
-    And The user click button login
+    Given The user opens the Login Page
+    When The user sees the Login Page
+    And The user inputs username
+    And The user inputs password
+    And The user clicks the login button
     Then The user should see the cart button
